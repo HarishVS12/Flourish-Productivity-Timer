@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoAct"
+    android:background="#BBB741">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/appicon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:fontFamily="@font/pacifico"
+                android:text="Developed by Harish.V"
+                android:textColor="#FF0000"
+                android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:fontFamily="@font/quitemagical"
+            android:text="Version : 0.1"
+            android:textColor="#0A186A"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:text="ThirdParty Libraries :\n\nCustom EditText by warkiz, Circular ProgressBar by emredavarci,AppIntro by Paolorotolo,MagicButton by bloder,SpinKit by ybq,FancyGifDialog by Shashank02051997,Google AdMob."
+            android:textColor="#D32F2F"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/gmail"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="120dp"
+                android:src="@drawable/gmail"
+                android:onClick="gmail"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:id="@+id/insta"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/instagram"
+                android:onClick="insta"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/above"
+            android:text="PRIVACY POLICY"
+            android:textColor="#5C127E"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>

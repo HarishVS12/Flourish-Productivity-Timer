@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1DB972"
+    android:orientation="vertical">
+    <!--android:background="#1DB972"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="45dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/pacifico"
+            android:text="Flourish!"
+            android:textColor="#FF0000"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:text="click"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/question"
+            android:onClick="help"
+            android:id="@+id/help"/>
+
+        <ImageView
+            android:id="@+id/binfo"
+            android:layout_width="39dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:onClick="binfo"
+            android:src="@drawable/binfo" />
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:id="@+id/view1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#000000"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="8dp"
+        android:text="What do you need to do now?"
+        android:textStyle="bold"
+        android:fontFamily="@font/above"
+        android:textSize="25sp"
+        android:textColor="#02045D"/>
+
+    <EditText
+        android:id="@+id/taskText"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:fontFamily="@font/above"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:hint="Enter the task(Ex: Work,Study,Code)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/above"
+        android:text="Time to finish?"
+        android:textColor="#02045D"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.warkiz.widget.IndicatorStayLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/processtimeseek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_indicator_color="#F24040"
+            app:isb_indicator_text_color="#ffffff"
+            app:isb_indicator_text_size="25sp"
+            app:isb_only_thumb_draggable="false"
+            app:isb_progress="25"
+            app:isb_seek_smoothly="true"
+            android:layout_marginTop="4dp"
+            app:isb_show_indicator="rounded_rectangle"
+            app:isb_thumb_color="#03135A"
+            app:isb_thumb_size="30dp"
+            app:isb_track_background_color="#e7b330"
+            app:isb_track_background_size="6dp"
+            app:isb_track_progress_color="#C96312"
+            app:isb_track_progress_size="10dp" />
+    </com.warkiz.widget.IndicatorStayLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short Break : "
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/above"
+        android:textSize="25sp"
+        android:textColor="#02045D"/>
+
+    <com.warkiz.widget.IndicatorStayLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/shortbreakseek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_indicator_color="#F24040"
+            app:isb_indicator_text_color="#ffffff"
+            app:isb_indicator_text_size="25sp"
+            app:isb_only_thumb_draggable="false"
+            app:isb_progress="25"
+            app:isb_seek_smoothly="true"
+            android:layout_marginTop="4dp"
+            app:isb_show_indicator="rounded_rectangle"
+            app:isb_thumb_color="#03135A"
+            app:isb_thumb_size="30dp"
+            app:isb_track_background_color="#e7b330"
+            app:isb_track_background_size="6dp"
+            app:isb_track_progress_color="#C96312"
+            app:isb_track_progress_size="10dp" />
+    </com.warkiz.widget.IndicatorStayLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long Break : "
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/above"
+        android:textSize="25sp"
+        android:textColor="#02045D"/>
+    <com.warkiz.widget.IndicatorStayLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/longbreakseek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_indicator_color="#F24040"
+            app:isb_indicator_text_color="#ffffff"
+            app:isb_indicator_text_size="25sp"
+            app:isb_only_thumb_draggable="false"
+            app:isb_progress="25"
+            app:isb_seek_smoothly="true"
+            android:layout_marginTop="4dp"
+            app:isb_show_indicator="rounded_rectangle"
+            app:isb_thumb_color="#03135A"
+            app:isb_thumb_size="30dp"
+            app:isb_track_background_color="#e7b330"
+            app:isb_track_background_size="6dp"
+            app:isb_track_progress_color="#C96312"
+            app:isb_track_progress_size="10dp" />
+    </com.warkiz.widget.IndicatorStayLayout>
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/quitemagical"
+        android:textStyle="italic"
+        app:button_icon="@drawable/stopwatch"
+        app:button_icon_height="38dp"
+        app:button_icon_width="38dp"
+        app:expandable_area_color="#F7760B"
+        app:hide_text="Start Timer!"
+        app:hide_text_color="@android:color/white"
+        app:hide_text_size="7dp"
+        app:icon_button_color="#F7760B"
+        app:magic_button_size="60dp" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5040215542785098/4714918986">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>
+</ScrollView>
